@@ -22,10 +22,10 @@
 </head>
 <body>
   <h1>PocketPDF Privacy Policy</h1>
-  <p>Effective date: <time datetime="2026-10-13">October 13, 2026</time> · Last updated: <time datetime="2026-10-13">October 13, 2026</time></p>
+  <p>Effective date: <time datetime="2026-10-13">October 13, 2026</time> · Last updated: <time datetime="2026-11-05">November 5, 2026</time></p>
   <main id="policy">
   <p>PocketPDF is an offline document scanner and PDF creation app provided by <strong>Demin.yin</strong> (“we,” “us,” or “our”). This policy explains how the app handles your information and what happens if you contact us for support.</p>
-  <p>Scanning and document processing stay on your device, without sign-in. Watermarked PDFs can be exported offline for free without a usage limit. You may choose to watch an online rewarded ad to remove the watermark from one PDF. Document contents are not uploaded.</p>
+  <p>Basic scanning and document processing stay on your device without sign-in. Basic PDFs can be exported offline for free without watermarks or a usage limit. An optional Pro subscription uses Google sign-in and Google Play payments for batch processing, advanced export, high quality and ad removal. Document contents are not uploaded.</p>
 
   <section id="local-data" aria-labelledby="local-data-title">
     <h2 id="local-data-title">1. Information processed on your device</h2>
@@ -33,7 +33,8 @@
     <ul>
       <li><strong>Document images:</strong> photos you take in the app and images you select for import, including any information contained in those files.</li>
       <li><strong>Draft information:</strong> document names, page order, creation and modification dates, file references, and saved editing information.</li>
-      <li><strong>Generated files:</strong> PDFs and temporary files created when preparing, saving, opening, or sharing a document.</li>
+      <li><strong>Recognized text:</strong> Text you choose to recognize, the recognition language and time are saved locally with the draft for viewing, copying and search. Android uses bundled recognition models and iOS uses system Vision. Recognition images and results are not uploaded to us. Temporary recognition images are cleaned up after processing.</li>
+      <li><strong>Generated files:</strong> PDFs and temporary files created when preparing, saving, opening, or sharing a document. After saving, the app retains a PDF copy in its private document folder so you can reopen or share it later.</li>
       <li><strong>Preferences:</strong> your language, appearance, export-quality settings, and whether you have completed the introduction.</li>
     </ul>
     <p>This information is used locally to display and organize your documents, restore drafts, remember settings, and generate PDFs. Original imported files may contain embedded metadata; importing a file is not an anonymization service.</p>
@@ -51,7 +52,8 @@
 
   <section id="collection" aria-labelledby="collection-title">
     <h2 id="collection-title">3. Collection, advertising, and analytics</h2>
-    <p>Watermarked exports are free and unlimited; no free allowance is tracked. Optionally completing an AdMob rewarded ad unlocks one locally generated PDF without a watermark. Each new watermark-free PDF needs a new reward. No account, database or cloud allowance service is used. Advertising services may process IP addresses, device or advertising identifiers, ad interactions and diagnostics, depending on your privacy choices and SDK settings. Ad privacy choices are accessible from the export screen when applicable. There are no in-app purchases. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p>The free plan displays AdMob banners. An active Pro subscription stops ad display and requests. Advertising services may process IP addresses, device or advertising identifiers, ad interactions and diagnostics, depending on your privacy choices and SDK settings. Ad privacy settings appear in the ad area when applicable. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p>If you choose to sign in and subscribe, Firebase Authentication processes your Google account identifier, email and display name. Cloud Functions verifies purchases with Google Play; Cloud Firestore stores account-linked subscription status, expiry and verification times, and private purchase records used to prevent duplicate ownership. Firebase App Check may process device integrity attestations to protect these services. These services support accounts, subscriptions and service security. Document images, OCR content and PDFs are not sent to our cloud services. Google Play handles payment details; we do not receive card details.</p>
     <p>We do not sell or rent your personal information. Your operating system and app store may process information independently under their own privacy policies and your device settings.</p>
   </section>
 
@@ -65,13 +67,15 @@
     <h2 id="retention-title">5. Storage, retention, and deletion</h2>
     <p>Drafts, imported image copies, and preferences remain in the app’s private storage until you remove them or the app’s data is removed. There is no automatic expiry period for drafts.</p>
     <ul>
-      <li><strong>Deleting an app document</strong> removes its draft information and associated original and processed images from the app’s private document folder. It does not delete the source image in your photo library.</li>
+      <li><strong>Deleting an app document</strong> removes its draft information, recognized text, retained in-app PDF copies and associated original and processed images from the app’s private document folder. It does not delete the source image in your photo library.</li>
       <li><strong>Temporary exported PDFs</strong> are stored separately and may remain even after a draft is deleted. On Android, clearing the app’s storage removes these files along with other app data.</li>
       <li><strong>Uninstalling or deleting the app</strong> normally removes its private local data. On iOS, offloading the app can retain its data; deleting it is different from offloading it.</li>
       <li><strong>Externally saved or shared copies</strong> remain in their destination until you delete them there. Deleting a draft or uninstalling PocketPDF does not remove those copies.</li>
     </ul>
     <p>The Android app is configured to disable automatic app-data backup and exclude its data from Android’s standard cloud-backup and device-transfer mechanisms. On iOS, system backups may include app data depending on your device settings. PocketPDF does not provide its own cloud backup or synchronization service.</p>
-    <p>Save important PDFs before clearing app data or uninstalling. We cannot restore deleted local documents. Watermarked exports are always free; there is no export allowance to store or restore.</p>
+    <p>Account and purchase metadata are retained until you delete your account in Settings → Pro subscription or request deletion by email. This deletes the Firebase account and our purchase associations, while keeping local documents. Account deletion does not cancel Google Play auto-renewal; cancel it separately in Google Play subscription management. You can later sign in with the same Google account and restore an eligible active purchase. If account cleanup is still in progress, retry after it finishes. Google may retain transaction records under its policies and legal obligations.</p>
+    <p><strong>Delete your account:</strong> See the <a href="delete-account.html">PocketPDF account and data deletion page</a> for the in-app path, email request method, data deleted, and data retained.</p>
+    <p>Save important PDFs before clearing app data or uninstalling. We cannot restore deleted local documents. Basic watermark-free exports remain free; there is no export allowance to store or restore.</p>
   </section>
 
   <section id="security" aria-labelledby="security-title">
